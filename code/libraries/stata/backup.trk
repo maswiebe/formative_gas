@@ -1,4 +1,4 @@
-* 00000005
+* 00000006
 *! version 1.0.0
 * Do not erase or edit this file
 * It is used by Stata to track the ado and help
@@ -258,4 +258,64 @@ f p/parallel_map.ado
 f p/parallel_map.sthlp
 f p/parallel_map_template.do.ado
 f f/ftab.ado
+e
+S https://raw.githubusercontent.com/sergiocorreia/reghdfe/master/src
+N reghdfe.pkg
+D 25 Jun 2024
+U 6
+d REGHDFE: Linear models with multi-way fixed effects and multi-way clustering
+d 
+d Authors:
+d - Sergio Correia. Board of Governors of the Federal Reserve System
+d - Noah Constantine. Board of Governors of the Federal Reserve System
+d Support:
+d - https://github.com/sergiocorreia/reghdfe/issues
+d 
+d reghdfe fits a linear or instrumental-variable/GMM regression absorbing an arbitrary number of categorical factors and factorial interactions
+d Optionally, it saves the estimated fixed effects.
+d 
+d The estimator employed is described in Correia (2017):
+d http://scorreia.com/research/hdfe.pdf
+d 
+d For details (user guide, help, FAQ), see the website:
+d http://scorreia.com/reghdfe/
+d 
+d KW: fixed effects
+d KW: panel data
+d KW: hdfe
+d KW: areg
+d KW: xtreg
+d KW: MWFE
+d KW: MWC
+d KW: cluster
+d 
+d Requires: Stata version 11.2
+d 
+d Required packages:
+d  ftools
+d 
+d Distribution-Date: 20230912
+d 
+f r/reghdfe.ado
+f r/reghdfe_estat.ado
+f r/reghdfe_header.ado
+f r/reghdfe_footnote.ado
+f r/reghdfe_p.ado
+f r/reghdfe.mata
+f r/reghdfe.sthlp
+f r/reghdfe_programming.sthlp
+f e/estfe.ado
+f r/reghdfe3.ado
+f r/reghdfe3.sthlp
+f r/reghdfe3_estat.ado
+f r/reghdfe3_footnote.ado
+f r/reghdfe3_p.ado
+f r/reghdfe5.ado
+f r/reghdfe5.mata
+f r/reghdfe5.sthlp
+f r/reghdfe5_estat.ado
+f r/reghdfe5_footnote.ado
+f r/reghdfe5_header.ado
+f r/reghdfe5_p.ado
+f r/reghdfe5_parse.ado
 e
